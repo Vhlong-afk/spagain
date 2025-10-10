@@ -5,16 +5,20 @@ body {
 
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: 0;
   left: 0;
   background: #000;
   color: #fff;
-  padding: 8px;
-  z-index: 100;
+  padding: 10px 15px;
+  z-index: 999;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
 }
+
 .skip-link:focus {
-  top: 0;
+  transform: translateY(0);
 }
+
 
 header {
   background-color: aqua;
@@ -83,3 +87,4 @@ h1 {
 p {
   line-height: normal;
 }
+
